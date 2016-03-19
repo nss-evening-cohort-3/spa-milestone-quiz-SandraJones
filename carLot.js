@@ -2,19 +2,17 @@
 var CarLot = (function () {
   var inventory = [];
   return {
-    // getInventory: function () {
-    // },
     loadInventory: function (callBTI) {
+    	console.log("	loadInventory works");
       var inventoryLoader = new XMLHttpRequest();
-      inventoryLoader.open("GRT", "inventory.json");
+      inventoryLoader.open("GET", "inventory.json");
       loader.send();
       inventoryLoader.addEventListener("load", function () {
-      inventory = JSON.parse(this.responseText).inventory;
+      inventory = JSON.parse(this.responseText).inventory.cars;
       callBTI(inventory);	
+      console.log("this works", inventory);
       });
     }
   };
 })();
 
-
-//may not even use the getInventory function
