@@ -1,6 +1,8 @@
 "use strict";
-var CarLot = (function () {
+
+var CarLot = (function (newCarLot) {
   var inventory = [];
+  console.log("inventoryinCarlotjsworks!", inventory);
   return {
     loadInventory: function (callBTI) {
     	console.log("	loadInventory works");
