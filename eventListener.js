@@ -1,6 +1,7 @@
 "use strict";
+
 function activateEvents() {
-  console.log("activateEvntsworks!");
+  console.log("activateEventsworks!");
 
   //// // When you click on one of the car elements, change the width of the border to a higher value, and change the background color to any other color of your choosing.
   element.addEventListener("click", changeBorder) {
@@ -18,7 +19,7 @@ function activateEvents() {
 
 		element.addEventListener("keyup", changeDescription) {
 			function changeDescription() {
-				//grab input and write itin the description area of the car object
+				//grab input and write it in the description area of the car object
 				//cars.description.value changes
 			}
 	}
