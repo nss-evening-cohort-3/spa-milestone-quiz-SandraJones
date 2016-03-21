@@ -1,8 +1,8 @@
 "use strict";
 
 var CarLot = (function (newCarLot) {
-  var inventory = [];
   console.log("inventoryinCarlotjsworks!", inventory);
+  var inventory = [];
   return {
     loadInventory: function (callback) {
     	console.log("	loadInventory works");
@@ -15,8 +15,12 @@ var CarLot = (function (newCarLot) {
       console.log("this works", inventory);
       });
     }
+    newCarLot.Inventory = function() {
+      return inventory;
+    };
   };
-})();
+  return newCarLot;
+})(CarLot);
 CarLot.loadInventory(newCarLot);
-console.log("CarLot", Carlot.loadInventory);
+console.log(CarLot, Carlot.loadInventory);
 

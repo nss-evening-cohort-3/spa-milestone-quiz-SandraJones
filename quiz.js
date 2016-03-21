@@ -1,15 +1,14 @@
 "use strict";
 var CarLot = (function (newCarLot) {
 //populate the DOM function  which is what u pass into getInventory
-function populatePage(CarLot) {
-	console.log("populatePageFunctionWorks!", populatePage);
-  // Loop over the inventory and populate the page
-  for (var i=0; i< inventory.length; i++) {
-  	var currentInventory = inventory[];
-     //as we go thru the function we are going to build one car at a time
-	  buildCarList(inventory);
-	  } 
-	addClickEvent();
+  function populatePage(CarLot) {
+    // Loop over the inventory and populate the page
+    for (var i=0; i< inventory.length; i++) {
+    	var currentInventory = inventory[];
+       //as we go thru the function we are going to build one car at a time
+  	  buildCarList(inventory);
+  	  } 
+  	addClickEvent();
 }
 function buildCarList() {
   outputString += `<h1>${currentInventory.make}</h1>
@@ -39,7 +38,7 @@ function addClickEvent(currentInventory) {
 }
 //we only want to have one car selected at a time, so:
 function removeSelected(){
-	for (let i=0; i<card.length; i++) {
+	for (let i=0; inventory.length; i++) {
     inventory[i].classList.remove("row");
   }
 }
@@ -65,4 +64,4 @@ function keyEvent(currentInventory, currentDescription){
 
 
 populatePage();
-})();
+})(CarLot);
