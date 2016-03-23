@@ -10,7 +10,7 @@ var CarLot = (function (newCarLot) {
   	  } 
   	addClickEvent();
 }
-function buildCarList() {
+function buildCarList() {  
   outputString += `<h1>${currentInventory.make}</h1>
   	<h2>${currentInventory.model}</h2><h3>${currentInventory.year}</h3>${currentInventory.price}</h3><h4>${currentInventory.color}</h4>
   	<h5>${currentInventory.purchased}</h5><h6>${currentInventory.description}</h6>`;
