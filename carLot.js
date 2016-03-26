@@ -1,42 +1,21 @@
 "use strict";
-
 var CarLot = (function (newCarLot) {
-  console.log("inventoryinCarlotjsworks!", inventory);
   var inventory = [];
+  console.log("first step");
   return {
-    loadInventory: function (callback) {
+    getInventory: function() {
+      return inventory;
+    },   
+    loadInventory: function () {
       var invLoader = new XMLHttpRequest();
-      invLoader.addEventListener("load", function() {
-      var data = JSON.parse(this.responseText);
-      inventory = data.cars;
-      });
-      invLoader.open("GET", "CarLot.json");
-      chatLoader.send();
+      invLoader.addEventListener("load", function() { 
+      var dealer = JSON.parse(this.responseText);
+      inventory = dealer.cars;
+      CarLot.populatePage(inventory);
+      });          
+      invLoader.open("GET", "carLot.json");
+      invLoader.send();
+      console.log("inventory", inventory);
     }
   }
-  return CarLot;
 })(CarLot);
-CarLot.loadInventory();
-
-
-
-
-//     	console.log("	loadInventory works"); 
-//       var inventoryLoader = new XMLHttpRequest();
-//       inventoryLoader.open("GET", "inventory.json");
-//       inventoryLoader.send();
-//       inventoryLoader.addEventListener("load", function () {
-//       inventory = JSON.parse(this.responseText).inventory.cars;
-//       callback(inventory);	
-//       console.log("this works", inventory);
-//       });
-//     }
-//     newCarLot.Inventory = function() {
-//       return inventory;
-//     };
-//   };
-//   return newCarLot;
-// })(CarLot);
-// CarLot.loadInventory(newCarLot);
-// console.log(CarLot, Carlot.loadInventory);
-
