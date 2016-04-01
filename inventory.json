@@ -1,0 +1,40 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "FireBrick",
+      "border-color": "red",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan 
+      Rogue with only 25000 miles on it. Leather seats, 
+      power everything."
+    },
+    {
+      "make": "Ford",
+      "model": "Escape",
+      "year": "2015",
+      "price": "19900",
+      "color": "Blue",
+      "border-color": "blue",
+      "purchased": false,
+      "description": "This is an immaculate 2015 Ford 
+      Escape with only 15000 miles on it. Leather seats, 
+      power everything."
+    },
+    {
+      "make": "Chevy",
+      "model": "Malibu",
+      "year": "2012",
+      "price": "11900",
+      "color": "Grey",
+      "border-color": "Grey",
+      "purchased": false,
+      "description": "This is an immaculate 2012 NChevy 
+      Malibu with only 2000 miles on it. Leather seats, 
+      power everything."
+    }
+  ]
+}
