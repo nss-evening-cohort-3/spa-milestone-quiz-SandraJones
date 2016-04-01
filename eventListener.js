@@ -1,18 +1,18 @@
-"use strict";
-var CarLot = (function (newCarLot) {
+// "use strict";
+// var CarLot = (function (newCarLot) {
 	
-	console.log(CarLot);
-function buildCarList(CarLot.inventory.cars.value) {
-var outputEl = document.getElementById("row");
+// 	console.log(CarLot);
+// function buildCarList(CarLot.inventory.cars.value) {
+// var outputEl = document.getElementById("row");
 
-document.getElementById('inputSpot').addEventListener("keyup", function(event) {
-		 outputEl.innerHTML = `<div class="row">
-          <div class="col-xs-4"><h1>${currentInventory.make}</h1>
-  	<h2>${currentInventory.model}</h2><h3>${currentInventory.year}</h3>${currentInventory.price}</h3><h4>${currentInventory.color}</h4>
-  	<h5>${currentInventory.purchased}</h5><h6>${currentInventory.description}</h6></div>
-          </div>`;
-});
-}();
+// document.getElementById('inputSpot').addEventListener("keyup", function(event) {
+// 		 outputEl.innerHTML = `<div class="row">
+//           <div class="col-xs-4"><h1>${currentInventory.make}</h1>
+//   	<h2>${currentInventory.model}</h2><h3>${currentInventory.year}</h3>${currentInventory.price}</h3><h4>${currentInventory.color}</h4>
+//   	<h5>${currentInventory.purchased}</h5><h6>${currentInventory.description}</h6></div>
+//           </div>`;
+// });
+// }();
 
 
 
